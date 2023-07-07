@@ -3,7 +3,7 @@
 
 
 
-Console.WriteLine("Для сравнение чисел введите первое число");
+/*Console.WriteLine("Для сравнение чисел введите первое число");
 int a = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Ваше первое число" + " " + a);
 Console.WriteLine("Для сравнение чисел введите второе число");
@@ -16,5 +16,13 @@ else if
     (b > max) max = b;
 Console.WriteLine("Максимальное число " + max);
 
+*/
 
-
+Console.WriteLine("Введите число");
+int n = Convert.ToInt32(Console.ReadLine());
+int i = -1 * n;
+while (i <= n)
+{
+    Console.WriteLine("Дапозон чисел" + " " + i);
+    i++;
+}
