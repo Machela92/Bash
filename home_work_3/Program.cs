@@ -1,6 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-/*Console.WriteLine("Введите первую кординату х1");
+Console.WriteLine("Введите первую кординату х1");
 int x1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("x1 =" + x1);
 Console.WriteLine("Введите вторую кординату х2");
@@ -18,7 +18,7 @@ Console.WriteLine("z1 =" + z1);
 Console.WriteLine("Введите вторую кординату z2");
 int z2 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("z2 =" + z2);
-Console.WriteLine(Math.Round(Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2) + Math.Pow(z2 - z1, 2))));*/
+Console.WriteLine(Math.Round(Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2) + Math.Pow(z2 - z1, 2))));
 
 Console.WriteLine("Введите число в пределах от 10к до 99к");
 int number = Convert.ToInt32(Console.ReadLine());
@@ -48,9 +48,16 @@ void find_number(int num)
 }
 find_number(number);
 
+// Пишем число и возводим в куб  от 1 до числа N
 
-
-
+Console.WriteLine("Ваше число n");
+int n = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine($" Ваше число n ={n}");
+for (int i = 1; i <= n; i++)
+{
+    double result = Math.Pow(i, 3);
+    Console.WriteLine($"Куб от числа {i} равен {result}");
+}
 
 
 
