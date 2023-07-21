@@ -39,7 +39,7 @@ void find_number(int num)
     int n4 = Convert.ToInt32(num / 10 % 10);
 
     int n5 = Convert.ToInt32(num % 10);
-    if (n1 == n5 || n2 == n4)
+    if (n1 == n5 && n2 == n4)
     {
         Console.WriteLine("Yes");
 
