@@ -8,3 +8,5 @@ double  - вещественное число, при делении будет 
 new Random().Next(min, max) метод принимает случайное число  мин и макс 
 ToLower() принимат буквы и делает их  маленькими 
 int a = Convert.ToInt32(Console.ReadLine()) Переобразует введениые данные в числа
+ Console.WriteLine($"[{string.Join(",", array)}]") вывод массива на экран 
+ int[] array = new int[8];  создание массива
