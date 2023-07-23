@@ -1,5 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
-/*Console.WriteLine("Введите число А");
+Console.WriteLine("Введите число А");
 int A = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine($"Число А = {A}");
 Console.WriteLine("Введите число B  оно возведет число А в ту степень которой Является B");
@@ -18,7 +18,7 @@ int double_number(int a, int b)
 }
 
 Console.WriteLine($"Число {A} в степени {B} будет равно {double_number(A, B)}");
-*/
+
 
 Console.WriteLine("Введите число  и мы узнаем сумму цифр числа");
 int new_number = Convert.ToInt32(Console.ReadLine());
@@ -27,13 +27,32 @@ int sum_finder(int number)
 {
     int sum = 0;
 
-    while (number > 0) ;
+
+    while (number > 0)
     {
-        sum = sum + number % 10;
-        number = number / 10;
+        sum = sum + number % 10; // я так понял здесь мы прибавляем остаток от деления 
+
+        number = number / 10; // А это зачем делаем? 
+
 
     }
     return sum;
 
 }
 Console.WriteLine($"Сумма цифр числа {new_number} = {sum_finder(new_number)}");
+
+int[] array = new int[8];
+int array_number = 1; // счетчик элементов, да  начинается не с нуля это не правильно, но так понятнее=)
+int counter = 8; // Счетчик  итерации.
+for (int i = 0; i < array.Length; i++)
+
+{
+    Console.WriteLine($"Введите {array_number} элемент массива");
+    array[i] = Convert.ToInt32(Console.ReadLine());//0
+    array_number++;
+    counter--;
+    Console.WriteLine($"Осталось внести {counter}");
+    Console.WriteLine($"[{string.Join(",", array)}]");
+
+
+}
