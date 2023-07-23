@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+// Программа  возводит А в степень B 
 Console.WriteLine("Введите число А");
 int A = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine($"Число А = {A}");
@@ -19,7 +20,7 @@ int double_number(int a, int b)
 
 Console.WriteLine($"Число {A} в степени {B} будет равно {double_number(A, B)}");
 
-
+// Узнаем сумму введенного числа 
 Console.WriteLine("Введите число  и мы узнаем сумму цифр числа");
 int new_number = Convert.ToInt32(Console.ReadLine());
 
@@ -41,6 +42,7 @@ int sum_finder(int number)
 }
 Console.WriteLine($"Сумма цифр числа {new_number} = {sum_finder(new_number)}");
 
+// Пользователь создает массив из заданного числа элементов, вводит все в  режиме онлайн и вывод на экран.
 int[] array = new int[8];
 int array_number = 1; // счетчик элементов, да  начинается не с нуля это не правильно, но так понятнее=)
 int counter = 8; // Счетчик  итерации.
