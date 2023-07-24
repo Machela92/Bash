@@ -9,8 +9,25 @@ void setArray(int[] array) // функция для заполнения  мас
 
 }
 
+void releasArray(int[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        array[i] *= (-1);
+    }
+}
+
+void sum_index(int[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i] = 1) ;
+    }
+}
 Console.WriteLine("Введите  элементы в массив");
 int num = Convert.ToInt32(Console.ReadLine()); // вводим число 
 int[] arr = new int[num]; // Это число  передает какой  длины будет массив
 setArray(arr); // вызов функции 
 Console.WriteLine($"[{string.Join(", ", arr)}]"); // вывод массива на  экран 
+releasArray(arr);
+Console.WriteLine($"[{string.Join(", ", arr)}]");
