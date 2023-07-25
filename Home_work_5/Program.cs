@@ -71,6 +71,17 @@ double finder(double[] array)
     }
     return array[max];
 }
+
+double min_finder(double[] array)
+{
+    int min = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i] < array[min])
+            array[min] = array[i];
+    }
+    return array[min];
+}
 Console.WriteLine("Введите кол-во элементов в массиве");
 int n = Convert.ToInt32(Console.ReadLine());
 double[] arr = new double[n];
@@ -78,6 +89,8 @@ oddArray(arr);
 Console.WriteLine($"[{string.Join(", ", arr)}]");
 finder(arr);
 Console.WriteLine(finder(arr));
-
+Console.WriteLine(min_finder(arr));
+double total_result = finder(arr) - min_finder(arr);
+Console.WriteLine($"{finder(arr)} - {min_finder(arr)} = {total_result}");
 
 
