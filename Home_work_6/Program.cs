@@ -10,7 +10,7 @@ int negative_number_counter(int[] array1)
     int neg_counter = 0;
     for (int i = 0; i < array1.Length; i++)
     {
-        if (array1[i] < 0)
+        if (array1[i] > 0)
         {
             neg_counter++;
         }
@@ -19,7 +19,7 @@ int negative_number_counter(int[] array1)
     return neg_counter;
 }
 
-Console.WriteLine($" Отрицательных числе введнных вами в массиве  равно {negative_number_counter(negative_array)}");
+Console.WriteLine($" чисел  введнных вами больше нуля {negative_number_counter(negative_array)}");
 
 
 Console.WriteLine("Введите переменную b1: ");
