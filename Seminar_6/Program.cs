@@ -72,7 +72,7 @@ for (int i = 0; i < fib_number; i++)
     n0 = n1;
     n1 = n2;
 
-}
+}// Идет копирование и дублирования  массива 
 Console.Clear();
 Console.WriteLine("Введите массив");
 
