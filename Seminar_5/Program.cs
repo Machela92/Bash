@@ -21,7 +21,7 @@ void sum_index(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-        if (array[i] = 1) ;
+        if (array[i] = 1)
     }
 }
 Console.WriteLine("Введите  элементы в массив");
